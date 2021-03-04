@@ -1,4 +1,4 @@
-# Antrosios uzduoties pirma versija
+# Antrosios uzduoties antra versija
 
 Galimybės:
 * ši versija leidžia suvesti norimą studentų kiekį; 
@@ -6,6 +6,9 @@ Galimybės:
 * taip pat yra privaloma pridėti egzamino balą;
 * yra galimybė namų darbų rezultatus ir egzamino balą sugeneruoti atsitiktinai;
 * galiausiai ši programa jums pateikia studentų galutinį vidurkį arba medianą.
+
+Papildomai:
+* leidžia nuskaityti norimus failus su studentu rezultatais.
 
 Įdiegimo instrukcija:
 * parsisiunčiate šį failą, kuriame rasite du skirtingus .cpp dokumentus (jie yra vienodi, tik vienas atliktas su vektoriais);
