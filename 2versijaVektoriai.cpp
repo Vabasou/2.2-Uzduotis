@@ -294,7 +294,7 @@ void skaitymas()
 
     string failoString;
     fstream duomenys;
-    duomenys.open("kursiokai100000.txt");
+    duomenys.open("kursiokai.txt");
 
     while (!duomenys.eof())
     {
@@ -343,7 +343,7 @@ void skaitymas()
         studentas.push_back(studDuomenys);
     }
     
-    //sort(studentas.begin(), studentas.end());
+    sort(studentas.begin(), studentas.end());
 
     isvedimasFailo(studentas);
     // ofstream out_file ("kursiokaiOut.txt");
