@@ -42,7 +42,7 @@ double getMedianaFailas(vector<double> &pazymiai){
 
     sort(pazymiai.begin(), pazymiai.end());
 
-    if(pazymiai.size()%2 == 1)
+    if(pazymiai.size()%2 == 0)
     {
         mediana = pazymiai[pazymiai.size()/2];
     }     
@@ -254,7 +254,7 @@ void isvedimasFailo(vector<StudentasFailo> studentas)
 {   
     ofstream out_file ("kursiokaiOut.txt");
     
-    out_file << "Vardas" << setw(10+7) << "Pavarde" << setw(10+15) << "Vidurkis (med.)" << setw(5+15) << "Vidurkis (vid.)" 
+    out_file << "Vardas" << setw(10+7) << "Pavarde" << setw(10+15) << "Galutinis (med.)" << setw(5+15) << "Galutinis (vid.)" 
     << endl << "------------------------------------------------------------------------------" << endl;
     for(int i =0 ; i < studentas.size(); i++)
     {
