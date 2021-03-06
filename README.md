@@ -17,7 +17,8 @@ Papildomai:
 * ir šiuos failus leidžiate su pasirinkta programa, kuri paleižia c++ failus;
 * jei neturite tokios programos, ar nežinote kaip tai atlikti, čia yra [nuoroda](https://code.visualstudio.com/docs/languages/cpp).
 * jūsų naudojimo palengvinimui yra padarytas makefile:
-```compileFailo:
+```
+compileFailo:
 	g++ -c ivedimasFailo.cpp
 	g++ -c funkcijosFailo.cpp
 	g++ -o main funkcijosFailo.o ivedimasFailo.o
