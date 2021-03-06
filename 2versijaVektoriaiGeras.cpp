@@ -58,10 +58,10 @@ struct StudentasFailo{
     string Vardas, Pavarde;
     double galutinisVidurkis, galutinisMediana;
 
-    void galutinisPazymys(vector<double> &grades, double egzamRez){
+    void galutinisPazymys(vector<double> &pazymys, double egzamRez){
         egzamRez *= 0.6;
-        galutinisVidurkis = ((getVidurkisFailas(grades)*0.4) + egzamRez);
-        galutinisMediana = ((getMedianaFailas(grades)*0.4) + egzamRez);
+        galutinisVidurkis = ((getVidurkisFailas(pazymys)*0.4) + egzamRez);
+        galutinisMediana = ((getMedianaFailas(pazymys)*0.4) + egzamRez);
     }
 
     bool operator < (StudentasFailo &stud) const {
