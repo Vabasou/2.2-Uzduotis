@@ -34,7 +34,7 @@ void outputas(vector<StudentasFailo> &a)
 
 void sukurimasFailo()
 {
-  RandInt rnd {0, 10};
+  RandInt rnd {1, 10};
   RandInt rnz {0, 12};
 
   int zmoniuSkaic = 0;
