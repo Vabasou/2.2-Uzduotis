@@ -1,4 +1,4 @@
-# Antrosios uzduoties ketvirta versija
+# Antrosios uzduoties penkta versija
 
 ### Galimybės:
 * ši versija leidžia suvesti norimą studentų kiekį; 
