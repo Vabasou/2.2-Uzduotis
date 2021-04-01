@@ -20,28 +20,34 @@
 kompiuterio komponentai: i5-6400 2.70GHz, DDR4 16GB 2900MHz, WDC WD10EZEX 1TB HDD
 
 std::vector
+
 | dydis    | Nuskaitymas | Rūšiavimas |
+|----------|-------------|------------|
 | 1000     | 0.047s      | 0.002s     |
 | 10000    | 0.423s      | 0.018s     |
 | 100000   | 4.691s      | 0.223s     |
 | 1000000  | 42.124s     | 2.779s     |
-| 10000000 | 
+| 10000000 | 421.289s    | 34.458s    |
 
 std::list
+
 | dydis    | Nuskaitymas | Rūšiavimas |
+|----------|-------------|------------|
 | 1000     | 0.045s      | 0.0009s    |
 | 10000    | 0.448s      | 0.009s     |
 | 100000   | 4.314s      | 0.133s     |
 | 1000000  | 41.613s     | 1.316s     |
-| 10000000 | 
+| 10000000 | 414.377s    | 17.226s    |
 
 std::deque
+
 | dydis    | Nuskaitymas | Rūšiavimas |
+|----------|-------------|------------|
 | 1000     | 0.045s      | 0.002s     |
 | 10000    | 0.429s      | 0.023s     |
 | 100000   | 4.319s      | 0.272s     |
 | 1000000  | 41.616s     | 3.340s     |
-| 10000000 | 
+| 10000000 | 419.74s     | 41.356     |
 
 ### programos veikimo ,naudojant vektorių ir rūšiavimą išvedimo metu, laikai
 rezultatai pateikiami skaičiuojant su 10 namų darbų pažymių.
