@@ -144,7 +144,7 @@ void failoSortVector(string failas)
 
     auto endSort = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diffSort = endSort - startSort;
-    cout << "studentu rikiavimas su vektorium uztruko: "<< diffSort.count() << " s\n";
+    cout << "Studentu rikiavimas su vektorium uztruko: "<< diffSort.count() << " s\n";
 
     isvedimasFailo(cools, "kursiokaiNiordai.txt");
     isvedimasFailo(Studentai, "kursiokaiNoobai.txt");
@@ -164,7 +164,6 @@ void failoSortList(string failas)
     Studentai.sort();
 
     list <StudentasFailo> :: iterator it = Studentai.begin();
-    int i = 1;
     for(const auto &stud : Studentai)
     {
         if(stud.galutinisVidurkis >= 5)
@@ -176,10 +175,13 @@ void failoSortList(string failas)
 
     auto endSort = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diffSort = endSort - startSort;
-    cout << " studentu rikiavimas su list uztruko: "<< diffSort.count() << " s\n";
+    cout << "Studentu rikiavimas su list uztruko: "<< diffSort.count() << " s\n";
 
     isvedimasFailo(cools, "kursiokaiNiordai.txt");
     isvedimasFailo(Studentai, "kursiokaiNoobai.txt");
+
+    cools.clear();
+    Studentai.clear();
 }
 
 void failoSortDeque(string failas)
@@ -206,11 +208,102 @@ void failoSortDeque(string failas)
 
     auto endSort = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diffSort = endSort - startSort;
-    cout << " studentu rikiavimas su deque uztruko: "<< diffSort.count() << " s\n";
+    cout << "Studentu rikiavimas su deque uztruko: "<< diffSort.count() << " s\n";
 
     isvedimasFailo(cools, "kursiokaiNiordai.txt");
     isvedimasFailo(Studentai, "kursiokaiNoobai.txt");
 
     cools.clear();
     Studentai.clear();
+}
+
+void failoSortVector2Budas(string failas)
+{
+    vector <StudentasFailo> studentai;
+    vector <StudentasFailo> good;
+    vector <StudentasFailo> bad;
+
+    skaitymasIsFailo(studentai, failas);
+
+    auto startSort = std::chrono::high_resolution_clock::now();
+
+    int i;
+    for(i = 0; i < studentai.size(); i++)
+    {
+        if(studentai[i].galutinisVidurkis >= 5)
+            good.push_back(studentai[i]);
+        else
+            bad.push_back(studentai[i]);
+    }
+
+    auto endSort = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diffSort = endSort - startSort;
+    cout << "Studentu rikiavimas su vektorium uztruko: "<< diffSort.count() << " s\n";
+
+    isvedimasFailo(good, "kursiokaiNiordai.txt");
+    isvedimasFailo(bad, "kursiokaiNoobai.txt");
+
+    good.clear();
+    bad.clear();
+    studentai.clear();
+}
+
+void failoSortList2Budas(string failas)
+{
+    list <StudentasFailo> studentai;
+    list <StudentasFailo> good;
+    list <StudentasFailo> bad;
+
+    skaitymasIsFailo(studentai, failas);
+
+    auto startSort = std::chrono::high_resolution_clock::now();
+
+    for(const auto &stud : studentai)
+    {
+        if(stud.galutinisVidurkis >= 5)
+            good.push_back(stud);
+        else
+            bad.push_back(stud);        
+    }
+
+    isvedimasFailo(good, "kursiokaiNiordai.txt");
+    isvedimasFailo(bad, "kursiokaiNoobai.txt");
+
+    auto endSort = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diffSort = endSort - startSort;
+    cout << "Studentu rikiavimas su list uztruko: "<< diffSort.count() << " s\n";
+
+    good.clear();
+    bad.clear();
+    studentai.clear();
+}
+
+void failoSortDeque2Budas(string failas)
+{
+    deque <StudentasFailo> studentai;
+    deque <StudentasFailo> good;
+    deque <StudentasFailo> bad;
+
+    skaitymasIsFailo(studentai, failas);
+
+    auto startSort = std::chrono::high_resolution_clock::now();
+
+    for(const auto &stud : studentai)
+    {
+        if(stud.galutinisVidurkis >= 5)
+            good.push_back(stud);
+        else
+            bad.push_back(stud);        
+    }
+
+    isvedimasFailo(good, "kursiokaiNiordai.txt");
+    isvedimasFailo(bad, "kursiokaiNoobai.txt");
+
+    auto endSort = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diffSort = endSort - startSort;
+    cout << "Studentu rikiavimas su deque uztruko: "<< diffSort.count() << " s\n";
+
+    good.clear();
+    bad.clear();
+    studentai.clear();
 }
