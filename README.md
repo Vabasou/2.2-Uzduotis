@@ -1,4 +1,4 @@
-# Antrosios uzduoties 1.0 versija
+# Antrosios užduoties 1.0 versija
 
 ### Galimybės:
 * ši versija leidžia suvesti norimą studentų kiekį; 
