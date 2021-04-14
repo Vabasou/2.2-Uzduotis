@@ -50,6 +50,8 @@ std::deque
 | 1000000  | 50.661s     | 7.682s     | 58.576s            |
 | 10000000 | 544.596s    | 83.12      | 630.427s           |
 
+![Screenshot 2021-04-14 140230](https://user-images.githubusercontent.com/75567390/114703647-3baa3900-9d2e-11eb-9ccf-0cc4579d70cd.png)
+
 ### laikų skirtumai, naudojant senus ir naujus konteinerius
 kompiuterio komponentai: i5-6400 2.70GHz, DDR4 16GB 2900MHz, WDC WD10EZEX 1TB HDD
 
