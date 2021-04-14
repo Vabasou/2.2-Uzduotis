@@ -83,6 +83,8 @@ std::deque
 | 1000000  | 41.616s     | 3.340s     | 55.58s             |
 | 10000000 | 419.74s     | 41.356     | 594.766s           |
 
+![Screenshot 2021-04-14 124319](https://user-images.githubusercontent.com/75567390/114703658-3fd65680-9d2e-11eb-8e84-2b33169c340e.png)
+
 ### programos veikimo ,naudojant vektorių ir rūšiavimą išvedimo metu, laikai
 rezultatai pateikiami skaičiuojant su 10 namų darbų pažymių.
 
