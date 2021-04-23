@@ -17,7 +17,7 @@
 ### v1.0 privalumai
 - patikrina skaitymo ir rūšiavimo grečių skirtumus, tarp std::vector, std::list, std::deque taikant skirtingas stretegijas
 
-### laukų skirtumai, naudojant naujus konteinerius
+### laukų skirtumai, naudojant naujus konteinerius su struktūra
 kompiuterio komponentai: i5-6400 2.70GHz, DDR4 16GB 2900MHz, WDC WD10EZEX 1TB HDD
 
 std::vector
@@ -52,7 +52,7 @@ std::deque
 
 ![Screenshot 2021-04-14 140230](https://user-images.githubusercontent.com/75567390/114703647-3baa3900-9d2e-11eb-9ccf-0cc4579d70cd.png)
 
-### laikų skirtumai, naudojant senus ir naujus konteinerius
+### laikų skirtumai, naudojant senus ir naujus konteinerius su struktūra
 kompiuterio komponentai: i5-6400 2.70GHz, DDR4 16GB 2900MHz, WDC WD10EZEX 1TB HDD
 
 std::vector
@@ -85,9 +85,30 @@ std::deque
 | 1000000  | 41.616s     | 3.340s     | 55.58s             |
 | 10000000 | 419.74s     | 41.356     | 594.766s           |
 
-![Screenshot 2021-04-14 124319](https://user-images.githubusercontent.com/75567390/114703658-3fd65680-9d2e-11eb-8e84-2b33169c340e.png)
+### laikų skirtumai, naudojant senus ir naujus konteinerius su klase
+kompiuterio komponentai: i5-6400 2.70GHz, DDR4 16GB 2900MHz, WDC WD10EZEX 1TB HDD
 
-![Screenshot 2021-04-14 140230](https://user-images.githubusercontent.com/75567390/114703647-3baa3900-9d2e-11eb-9ccf-0cc4579d70cd.png)
+std::vector
+
+| Dydis    | Nuskaitymas | Rūšiavimas | Laikas su išvedimu |
+|----------|-------------|------------|--------------------|
+| 100000   | 2.05s       | 0.082s     | 2.768s             |
+| 1000000  | 20.197s     | 0.98s      | 27.43s             |
+
+std::list
+
+| Dydis    | Nuskaitymas | Rūšiavimas | Laikas su išvedimu |
+|----------|-------------|------------|--------------------|
+| 100000   | 2.037s      | 0.126s     | 2.840s             |
+| 1000000  | 19.969s     | 1.255s     | 27.75s             |
+
+std::deque
+
+| Dydis    | Nuskaitymas | Rūšiavimas | Laikas su išvedimu |
+|----------|-------------|------------|--------------------|
+| 100000   | 1.94s       | 0.121s     | 2.675s             |
+| 1000000  | 20.007s     | 1.466s     | 27.679s            |
+
 
 ### programos veikimo ,naudojant vektorių ir rūšiavimą išvedimo metu, laikai
 rezultatai pateikiami skaičiuojant su 10 namų darbų pažymių.
