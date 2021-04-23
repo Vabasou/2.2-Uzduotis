@@ -13,9 +13,10 @@
 * rezultatai gali būti pateikiami į ```kursiokaiNoobai.txt```, kurių rezultatai yra <5 ir ```kursiokaiNiordai.txt```. kurių rezultatai yra >=5;
 * programa pateikia jos įvairių funkcijų laiko trukmę;
 * patikrina skaitymo ir rūšiavimo grečių skirtumus, tarp std::vector, std::list, std::deque.
+* patikrina skaitymo ir rūšiavimo grečių skirtumus, tarp std::vector, std::list, std::deque taikant skirtingas stretegijas
 
-### v1.0 privalumai
-- patikrina skaitymo ir rūšiavimo grečių skirtumus, tarp std::vector, std::list, std::deque taikant skirtingas stretegijas
+### v1.1 privalumai
+- vietoj struktūros, naudojama klasė.
 
 ### laukų skirtumai, naudojant naujus konteinerius
 kompiuterio komponentai: i5-6400 2.70GHz, DDR4 16GB 2900MHz, WDC WD10EZEX 1TB HDD
