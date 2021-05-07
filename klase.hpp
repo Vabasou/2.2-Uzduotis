@@ -24,7 +24,7 @@ class Studentas : public Zmogus
     private:
         double finalMed, finalVid;
         std::vector<double> ndRez;
-        int egzamRez;
+        double egzamRez;
 
     public:
         Studentas();
