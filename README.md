@@ -17,7 +17,7 @@
 * vietoj struktūros, naudojama klasė.
 
 ### v1.5 privalumai
-- klasėje yra "rule of three"
+- klasėje yra "rule of three": panaudotas copy konstruktorius, destruktorius ir priskyrimo operatorius.
 - išskaidyta į dvi klases
 
 ### laukų skirtumai, naudojant naujus konteinerius
