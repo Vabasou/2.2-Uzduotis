@@ -123,5 +123,5 @@ clean:
 Šį failą galite paleisti per linux arba iOS su komanda
 ```make <norima komanda>```
         
-Kad instaliuoti programą, spaudžiate 
+Kad instaliuoti programą, Debug folderyje yra [setup.exe]( failas, jį paspaudžiate ir jums belieka pasirinkti, kurioje vietoje norite programą instaliuoti.
         
