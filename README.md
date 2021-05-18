@@ -123,5 +123,5 @@ clean:
 Šį failą galite paleisti per linux arba iOS su komanda
 ```make <norima komanda>```
         
-Kad instaliuoti programą, Debug folderyje yra [setup.exe]( failas, jį paspaudžiate ir jums belieka pasirinkti, kurioje vietoje norite programą instaliuoti.
+Kad instaliuoti programą, Debug folderyje yra [setup.exe](https://github.com/Vabasou/2.2-Uzduotis/tree/main/Debug) failas, jį paspaudžiate ir jums belieka pasirinkti, kurioje vietoje norite programą instaliuoti.
         
