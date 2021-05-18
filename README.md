@@ -123,5 +123,5 @@ clean:
 Šį failą galite paleisti per linux arba iOS su komanda
 ```make <norima komanda>```
         
-
+Kad instaliuoti programą, spaudžiate 
         
